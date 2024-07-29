@@ -1,0 +1,43 @@
+.titlebox h1{
+    margin: 0;
+    color: #fff;
+    position: relative;
+    z-index: 11;
+    line-height: 1.25em;
+    font-size: 48px;
+    text-align: center;
+}
+
+.titlebox{
+    background-color: #2D3663;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.titlebox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('http://holamed.like-themes.com/wp-content/uploads/2018/11/inner_header_01.jpg');
+    zoom: 1;
+    filter: alpha(opacity=50);
+    -webkit-opacity: 0.5;
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+}
+.titlebox::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    max-width: 1540px;
+    width: 100%;
+    height: 4px;
+    background-color: #47ccc8;
+    border-radius: 6px;
+    background-clip: padding-box;
+}

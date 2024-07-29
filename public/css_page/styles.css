@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('./Header.css');
+@import url('./Home.css');
+@import url('./Sidebar.css');
+@import url('./Footer.css');
+@import url('./Blogs.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Niramit", sans-serif;
+}
+.container {
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 0px 12px;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Niramit", sans-serif;
+}
+p, span, table, td, th, caption {
+    font-family: "Lora", serif;
+}
+input {
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}

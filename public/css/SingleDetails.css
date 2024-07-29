@@ -1,0 +1,867 @@
+/* INICIO PORTADA */
+
+.Content__siteDetails--portada {
+    padding-bottom: 20px;
+}
+.Content__siteDetails--portada-buttons {
+    padding: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Content__siteDetails--portada-buttons button {
+    padding: 0px 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+.Content__siteDetails--portada-buttons button svg {
+    transition: .3s ease-in-out;
+}
+.Content__siteDetails--portada-buttons button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.Content__siteDetails--portada-buttons button:hover svg {
+    stroke: #fff;
+    transition: .3s ease-in-out;
+}
+
+.Content__siteDetails--portada-imagesGrid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    height: 465.5px;
+}
+.Content__siteDetails--portada-mainImage {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+}
+.Content__siteDetails--portada-mainImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.Content__siteDetails--portada-images {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.siteDetails__portada--images-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.siteDetails__portada--allImages-body .siteDetails__portada--images-image  {
+    height: 400px;
+}
+.siteDetails__portada--images-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* .siteDetails__portada--images-image:nth-of-type(4)::after {
+    content: "+9 fotos";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+} */
+.counterImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Content__siteDetails--portada-allImages {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    display: none;
+    transition: .3s ease-in-out;
+}
+.allImagesActive {
+    display: block;
+    opacity: 1;
+    visibility: initial;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-body {
+    padding-top: 85px;
+    max-height: 88vh;
+    overflow: auto;
+}
+.siteDetails__portada--allImages-body::-webkit-scrollbar {
+    display: none;
+}
+.siteDetails__portada--allImages-container {
+    display: grid;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.twoCols {
+    grid-template-columns: repeat(2,1fr);
+}
+.threeCols {
+    grid-template-columns: repeat(3,1fr);
+}
+.siteDetails__portada--allImages-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72px;
+    background-color: #fff;
+    z-index: 5;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid #d2d2d2;
+    box-shadow: 0px 5px 5px #0000001c;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.siteDetails__portada--allImages-header button {
+    padding: 0px 16px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header button svg {
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header button:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header button:hover svg {
+    stroke: #fff;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header .closeAllImages {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header .closeAllImages svg {
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header .closeAllImages:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.siteDetails__portada--allImages-header .closeAllImages:hover svg {
+    stroke: #fff;
+    transition: .3s ease-in-out;
+}
+
+/* FIN PORTADA */
+
+/* INICIO PLACE SPECS */
+
+.Content__siteDetails--placeInfo-placement {
+    margin-bottom: 15px;
+}
+.Content__siteDetails--placeInfo-placement p {
+    font-size: 20px;
+    color: #616161;
+    font-weight: 400;
+}
+.Content__siteDetails--placeInfo-placement p a {
+    text-decoration: underline;
+}
+.Content__siteDetails--placeInfo-name {
+    margin-bottom: 15px;
+}
+.Content__siteDetails--placeInfo-name h2 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+}
+.Content__siteDetails--placeInfo-specs {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    position: relative;
+    margin-bottom: 24px;
+}
+.Content__siteDetails--placeInfo-specs span {
+    position: relative;
+    font-size: 14px;
+    color: #616161;
+}
+.Content__siteDetails--placeInfo-specs span::after {
+    content: "•";
+    position: absolute;
+    right: -14px;
+    color: #616161;
+}
+.Content__siteDetails--placeInfo-specs span:last-of-type:after {
+    content: "";
+}
+.Content__siteDetails--placeInfo-technologies {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    row-gap: 20px;
+    padding: 30px 0px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    margin-bottom: 40px;
+}
+.siteDetails--placeInfo-technologies-technology {
+    display: flex;
+    gap: 32px;
+}
+.placeInfo__technologies--technology-details h4 {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.placeInfo__technologies--technology-details p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+}
+.Content__siteDetails--propertyAbout {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+.Content__siteDetails--propertyAbout-title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 24px;
+    padding-top: 40px;
+}
+.Content__siteDetails--propertyAbout-body {
+    max-height: 120px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.showText {
+    max-height: initial;
+}
+.Content__siteDetails--propertyAbout-body p {
+    font-size: 16px;
+    color: #212121;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.Content__siteDetails--propertyAbout button {
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    color: #537DA6;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+/* FIN INICIO PLACE SPECS */
+
+/* INICIO PLACE DESCRIPTION */
+
+.Content__siteDetails--placeDescription-title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 24px;
+    padding-top: 40px;
+}
+.siteDetails__placeDescription--propertyInfo-title {
+    margin-bottom: 20px;
+}
+.siteDetails__placeDescription--propertyInfo-title h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.siteDetails__placeDescription--propertyInfo-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 32px;
+    row-gap: 20px;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+.siteDetails__placeDescription--propertyInfo-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.siteDetails__placeDescription--propertyInfo-item span {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+}
+.siteDetails__placeDescription--roomsInfo-title {
+    margin-bottom: 20px;
+}
+.siteDetails__placeDescription--roomsInfo-title h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.siteDetails__placeDescription--roomsInfo-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d2d2d2;
+}
+.siteDetails__placeDescription--roomsInfo-item {
+    padding: 16px;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+}
+.siteDetails__placeDescription--roomsInfo-item p {
+    color: #212121;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-bottom: 2px;
+}
+.siteDetails__placeDescription--roomsInfo-item span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+}
+.Content__siteDetails--placeEquipment {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #d2d2d2;
+    margin-bottom: 30px;
+}
+.Content__siteDetails--placeEquipment-title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 24px;
+    padding-top: 40px;
+}
+.Content__siteDetails--placeEquipment-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 16px;
+    row-gap: 25px;
+    max-width: 800px;
+}
+.Content__siteDetails--placeEquipment-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.Content__siteDetails--placeEquipment-item span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #212121;
+}
+.Content__siteDetails--placeEquipment-button {
+    margin-top: 40px;
+}
+.Content__siteDetails--placeEquipment-button button {
+    padding: 16px;
+    height: 48px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 500;
+    color: #6699CC;    
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid #6699CC;
+    border-radius: 8px;
+    transition: .3s ease-in-out;
+}
+.Content__siteDetails--placeEquipment-button button:hover {
+    background-color: #6699CC;
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.Content__siteDetails--placeEquipment-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0000008f;
+    display: none;
+}
+.allEquipmentModalActive {
+    display: block;
+}
+.Content__siteDetails--placeEquipment-allEquipments {
+    background-color: #fff;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 80px;
+    padding: 24px 40px;
+    position: relative;
+}
+.siteDetails__placeEquipment--allEquipments-heading {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ebebeb;
+}
+.siteDetails__placeEquipment--allEquipments-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 65%;
+    margin-left: auto;
+}
+.siteDetails__placeEquipment--allEquipments-title h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+}
+.siteDetails__placeEquipment--allEquipments-title svg {
+    cursor: pointer;
+}
+.siteDetails__placeEquipment--allEquipments-body {
+    margin-top: 24px;
+    box-sizing: border-box;
+    max-height: 75vh;
+    padding-right: 12px;
+    overflow-y: auto;
+}
+.siteDetails__placeEquipment--allEquipments-body::-webkit-scrollbar {
+    width: 5px;
+}
+.siteDetails__placeEquipment--allEquipments-body::-webkit-scrollbar-track {
+    background-color: #cccccc5e;
+}
+.siteDetails__placeEquipment--allEquipments-body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.placeEquipment__allEquipments--body-catContainer {
+    padding: 20px 0px;
+}
+.placeEquipment__allEquipments--body-catContainer h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.placeEquipment__allEquipments--body-item {
+    padding: 14px 0px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #ebebeb;
+}
+.placeEquipment__allEquipments--body-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.placeEquipment__allEquipments--body-item p {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    color: #212121;
+}
+.placeEquipment__allEquipments--body-item span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #616161;
+}
+
+/* FIN PLACE DESCRIPTION */
+
+/* INICIO DISPONIBILIDAD */
+
+.Content__siteDetails--Location{
+    padding-bottom: 48px;
+    border-bottom: #d2d2d2 solid 1px;
+}
+
+.Content__siteDetails--Location-Title{
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.Content__siteDetails--Location-Title span{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Content__siteDetails--Location-Subtitle{
+    display: flex;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.Content__siteDetails--Location-Subtitle span{
+    text-decoration: underline;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.Content__siteDetails--Location-Subtitle svg{
+    padding-right: 16px;
+}
+
+.Content__siteDetails--Location-Map{
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.Content__siteDetails--Location-Map iframe{
+    width: 100%;
+    height: 600px;
+}
+
+.Content__siteDetails--Location-Info{
+    padding-top: 40px;
+}
+
+.siteDetails__Location--Info-Title{
+    padding-bottom: 8px;
+}
+
+.siteDetails__Location--Info-Title span{
+    font-weight: 500;
+}
+
+.siteDetails__Location--Info-Text{
+    width: 60%;
+    text-align: justify;
+    line-height: 24px;
+}
+
+.siteDetails__Location--Info-Text span{
+    font-size: 16px;
+}
+
+/* FIN DISPONIBILIDAD */
+
+/* INICIO SABER MAS*/
+
+.Content__siteDetails--KnowMore{
+    padding: 48px 0px;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.Content__siteDetails--KnowMore-Title span{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Content__siteDetails--KnowMore-Title{
+    padding-bottom: 24px;
+}
+
+.Content__siteDetails--KnowMore-flex{
+    display: flex;
+    gap: 115px;
+}
+
+.KnowMore__flex--Terms-Title span{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.KnowMore__flex--Terms-NormalItem{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.KnowMore__flex--Terms-NormalItem, .KnowMore__flex--Terms-QuestionItem span{
+    font-size: 14px;
+}
+
+.KnowMore__flex--Terms-QuestionItem{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.KnowMore__flex--Terms-QuestionItem svg{
+    padding-right: 15px;
+}
+
+.KnowMore__flex--Terms-QuestionItem span{
+    padding-right: 5px;
+}
+
+.flex__TermsTwo--Finishing-Title span {
+    font-weight: 500;
+    font-size: 16px;
+}
+.flex__TermsTwo--Finishing-Title{
+    padding-bottom: 20px;
+}
+
+.flex__TermsTwo--Finishing-Text{
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.flex__TermsTwo--Finishing-Text span{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.siteDetails__KnowMore--flex-TermsTwo{
+    width: 29.5%;
+}
+
+.flex__TermsTwo--Finishing-Button button{
+    padding: 16px;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #6699CC;
+    border: 1px solid #6699CC;
+    transition: 0.3s ease-in-out;
+}
+
+.flex__TermsTwo--Finishing-Button button:hover{
+    background-color: rgba(59,130,246,.5);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.KnowMore__flex--TermsTwo-Finishing:last-child{
+    padding-top: 30px;
+}
+
+/* FIN SABER MAS*/
+
+/* INICIO COMO RESERVAR */
+
+.Content__siteDetails--Reserve{
+    padding-top: 48px;
+}
+
+.Content__siteDetails--Reserve-Title span{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.Content__siteDetails--Reserve-Title{
+    padding-bottom: 48px;
+}
+
+.Content__siteDetails--Reserve-Item{
+    gap: 24px;
+    display: flex;
+    padding-bottom: 24px;
+}
+
+.siteDetails__Reserve--Item-Icon{
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #F1F5FA;
+    height: 48px;
+    width: 48px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.Reserve__Item--Text-Title{
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.Reserve__Item--Text-Paragraph{
+    width: 60%;
+    line-height: 24px;
+    color: #616161;
+}
+
+/* FIN COMO RESERVAR */
+
+
+/* TEMPLATE BOX FOR TEMPLATE2 */
+
+.templateBox {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc44;
+}
+.templateBox .Content__siteDetails--propertyAbout-title h2 {
+    padding-top: 0;
+}
+.templateBox .Content__siteDetails--Location-Title {
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+ /* FIN TEMPLATE BOX FOR TEMPLATE2 */
+
+ /* GUIAS TURISTICOS */
+
+.Content__guides {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc44;
+}
+.Content__guides--title h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #212121;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+.Content__guides--slide {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.Content__guides--heading {
+    width: 100%;
+    height: 100px;
+    background-color: #6699CC;
+}
+.Content__guides--details {
+    background-color: #fff;
+    padding: 0px 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    border: 1px solid #cccccc44;
+    border-bottom: 1px solid #cccccc73;
+}
+.Content__guides--icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+.Content__guides--icon::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    border: 2px solid #69c;
+}
+.Content__guides--icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: -50px;
+}
+.Content__guides--name {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Content__guides--name h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #414141;
+}
+.Content__guides--phone {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.Content__guides--phone p {
+    color: #414141;
+}
+.Content__guides--experiences {
+    margin-bottom: 10px;
+}
+.Content__guides--experiences p {
+    color: #414141;
+}
+.Content__guides--languages {
+    background-color: #fff;
+    padding: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.Content__guides--languages .language {
+    padding: 5px 10px;
+    background-color: #6699CC;
+    border-radius: 5px;
+    color: #ffffffef;
+}
+
+ /* FIN GUIAS TURISTICOS */

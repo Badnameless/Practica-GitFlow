@@ -1,0 +1,90 @@
+.Header__top {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    border-bottom: 2px dashed #2d36631a;
+}
+.Header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header__top--links ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.Header__top--links ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #2D3663;
+}
+.Header__top--links ul li .activeLink {
+    color: #47ccc8;
+}
+.Header__top--socials ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.Header__top--socials li a i {
+    font-size: 15px;
+    color: #47ccc8;
+}
+.Header__top--socials li:last-of-type {
+    margin-left: 25px;
+}
+.Header__top--socials li:last-of-type a i {
+    color: #2D3663;
+    font-size: 16px;
+}
+.Header__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 133px;
+    border-bottom: 2px dashed #2d36631a;
+}
+.Header__bottom--logo img {
+    max-width: 200px;
+}
+.Header__bottom--search input {
+    min-width: 400px;
+    border-radius: 40px;
+    background-clip: padding-box;
+    background-color: #EDF3F6;
+    border: 0 none;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 30px;
+    padding-right: 50px;
+    font-size: 14px;
+}
+.Header__bottom--search button {
+    margin-left: -50px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: none;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    color: #fff;
+    background-color: #47ccc8;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.Header__bottom--search button:hover {
+    background-color: #2D3663;
+}
+.Header__bottom--search button i {
+    font-size: 16px;
+}
